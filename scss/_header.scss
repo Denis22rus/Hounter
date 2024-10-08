@@ -1,0 +1,108 @@
+.header {
+    margin-top: 40px;
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 0;
+    z-index: 1000;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 46px;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        color: #1B1C57;
+        text-shadow: 1px 1px 1px #000;
+        img {
+            margin-right: 12px;
+        }
+    }
+    &__logo-title {
+        font-family: Lexend;
+    }
+    &__menu {
+        display: flex;
+    }
+}
+
+.menu {
+    &__body {
+        padding: 50px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        @media(max-width: $md1) {
+            flex-direction: column;
+        }
+    }
+    &__item {
+        margin-left: 24px;
+        @media(max-width: $md1) {
+            margin: 0px 0px 70px 0px;
+            &:nth-child(2) {
+                margin-bottom: 50px;
+            }
+            &:last-child {
+                margin: 0px;
+            }
+        }
+    }
+    &__item-arrow {
+        display: flex;
+        align-items: center;
+        border-radius: 32px;
+        padding: 5px 16px;
+        border: 1px solid #fff;
+        cursor: pointer;
+    }
+    &__link {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #F0F3FD;
+        padding: 8px 16px;
+        border: 1px solid #fff;
+        border-radius: 32px;
+        @media(max-width: $md1) {
+            padding: 16px 32px;
+            font-size: 1.125rem;
+        }
+    }
+    &__arrow {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #F0F3FD;
+        margin-right: 10px;
+        @media(max-width: $md1) {
+            padding: 16px 32px;
+            font-size: 1.125rem;
+        }
+    }
+}
+
+.sign-up {
+    margin-left: 56px;
+    @media(max-width: $md1) {
+        margin-left: 0px;
+    }
+    &__link {
+        color: #047857;
+        line-height: 22 / 14 * 100%;
+        padding: 12px 24px;
+        background-color: #D1FAE5;
+        border: none;
+        transition: background-color 0.2s linear;
+        &:hover {
+            background-color: #0fa070;
+        }
+    }
+
+}
+
+@media (max-width: $md1) {
+
+}

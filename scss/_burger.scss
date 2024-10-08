@@ -1,0 +1,66 @@
+@media (max-width: $md1) {
+    .menu__body {
+        transform: translate(0px, -100%);
+        transition: transform 0.8s ease 0s;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow: auto;
+        background-color: #23bd6e;
+    }
+    .active {
+        transform: translate(0px, 0%);
+    }
+}
+body.lock {
+    overflow: hidden;
+}
+.icon-menu {
+    display: none;
+    @media (max-width: $md1) {
+        display: block;
+        position: absolute;
+        top: 51px;
+        right: 65px;
+        width: 30px;
+        height: 27px;
+        cursor: pointer;
+        z-index: 5;
+        span {
+            transition: all 0.3s ease 0s;
+            top: calc(50% - 1px);
+            left: 0px;
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: black ;
+            border-radius: 5px;
+            &:first-child {
+                top: 0px;
+            }
+            &:last-child {
+                top: auto;
+                bottom: 0px;
+            }
+        }
+        &.active {
+            span {
+                transform: scale(0);
+                &:first-child {
+                    transform: rotate(-45deg);
+                    bottom: calc(50% - 1px);
+                }
+                &:last-child {
+                    transform: rotate(45deg);
+                    bottom: calc(92% - 1px);
+                }
+            }
+        }
+    }
+    @media(max-width: $md3) {
+        top: 0px;
+        right: 0px;
+    }
+}

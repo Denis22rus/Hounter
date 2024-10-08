@@ -1,0 +1,66 @@
+.subscribe {
+    padding-bottom: 120px;
+    &__modefied {
+        position: relative;
+        height: 312px;
+        background: url(../img/subscribe/background.jpg) no-repeat center;
+    }
+    &__center {
+        margin: 0 auto;
+        max-width: 424px;
+        height: 312px;
+        padding: 65px 0px;
+        h2 {
+            margin-bottom: 45px;
+        }
+        img {
+            position: absolute;
+            &:nth-child(1) {
+                top: 32px;
+                left: 59px;
+            }
+            &:nth-child(2) {
+                bottom: 65px;
+                left: 51px;
+            }
+            &:nth-child(3) {
+                top: 41px;
+                left: 186px;
+            }
+            &:nth-child(4) {
+                bottom: 83px;
+                left: 211px
+            }
+            &:nth-child(5) {
+                top: 37px;
+                right: 211px;
+            }
+            &:nth-child(6) {
+                top: 113px;
+                right: 181px;
+            }
+            &:nth-child(7) {
+                top: 77px;
+                right: 62px;
+            }
+            &:nth-child(8) {
+                bottom: 64px;
+                right: 85px;
+            }
+        }
+    }
+    &__background-input {
+        background: url(../img/subscribe/mail.png) 25px 17px no-repeat;
+    }
+}
+
+@media(max-width: $md1) {
+    .subscribe__center {
+        img {
+            display: none;
+        }
+    }
+    .subscribe {
+        padding-bottom: 70px;
+    }
+}

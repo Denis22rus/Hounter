@@ -1,0 +1,114 @@
+.find {
+    padding-bottom: 120px;
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left-block {
+        width: 572px;
+        display: flex;
+        margin-bottom: 36px;
+        margin-right: 68px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    &__img-block {
+        margin-right: 32px;
+    }
+    &__button {
+        padding: 12px 16px;
+        margin: 0 auto;
+    }
+    &__info-name {
+        font-size: 0.875rem;
+        line-height: 22 / 14 * 100%;
+        color: #3C4563;
+        padding: 8px 0px 18px 50px;
+
+    }
+    &__name-1 {
+        background: url(../img/faces/face-4.png) 0px 0px no-repeat;
+    }
+    &__name-2 {
+        background: url(../img/faces/face-3.png) 0px 0px no-repeat;
+    }
+    &__name-3 {
+        background: url(../img/faces/face-2.png) 0px 0px no-repeat;
+    }
+    &__name-4 {
+        background: url(../img/faces/face-1.png) 0px 0px no-repeat;
+    }
+    &__info-about {
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 32 / 18 * 100%;
+        color: $blue;
+        margin-bottom: 17px;
+    }
+    &__info-date {
+        font-size: 0.875rem;
+        line-height: 24 / 14 * 100%;
+        color: #888B97;
+        background: url(../img/find/timer.png) 0px 0px no-repeat;
+        padding-left: 36px;
+    }
+    &__right-block {
+        img {
+            max-width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+    &__info-about-sub {
+        font-size: 0.875rem;
+        line-height: 24 / 14 * 100%;
+        color: #626687;
+        margin-bottom: 16px;
+    }
+    &__big {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: $md1) {
+    .find {
+        padding-bottom: 70px;
+        &__right-block img{
+            max-width: 100%;
+        }
+        &__img-block img {
+            max-width: 100%;
+        }
+        &__blocks {
+            flex-direction: column;
+        }
+        &__bloc-md {
+            margin: 0 auto;
+            padding-bottom: 40px;
+        }
+        &__right-block {
+            text-align: center;
+        }
+        &__info-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media(max-width: $md2) {
+    .find {
+        &__left-block {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: $md3) {
+    .find {
+        &__info-about {
+            font-size: 0.875rem;
+        }
+    }
+}

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,600,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lexend:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>title</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                 <div class="icon-menu"> <!-- burger -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__logo">
+                    <a href="" >
+                        <img src="img/head-logo.png" alt="header-logo">
+                    </a>
+                    <a href="" class="header__logo-title">Hounter</a>
+                </div>
+                <div class="header__menu menu">
+                    <nav class="menu__body"> <!-- menu burger-->
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">About Us</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Article</a>
+                            </li>
+                            <li class="menu__item menu__item-arrow">
+                                <a href="#" class="menu__arrow ">Property</a>
+                                <img src="img/icons/white-arrow.png" alt="arrow">
+                            </li>
+                            <li class="menu__item sign-up">
+                                <a href="#" class="menu__link sign-up__link">Sign Up!</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="intro">
+                <div class="intro__container">
+                    <img src="img/house-picture.jpg" class="intro__house-img" alt="House">
+                    <div class="intro__background-img"></div>
+                    <div class="intro__contents">
+                        <div class="intro__content">
+                            <h1 class="intro__title">Find The Place To <br> Live <span>Your Dreams <br> </span> Easily Here</h1>
+                            <p class="intro__subtitle">Everything you need about finding your place to live will be here, where it will be easier for you</p>
+                            <div class="intro__search-form">
+                                <input type="search" class="intro__search-input search-input " name="search" placeholder="Search for the location you want!">
+                                <button type="submit" class="button-green">Search
+                                    <img src="img/icons/arrow-submit.png" alt="Arrow">
+                                </button>
+                            </div>
+                            <p class="intro__subtitle-partners">Our Partnership</p>
+                            <div class="intro__partners-picture">
+                                <a href="#">
+                                    <img src="img/traveloka.png" alt="Traveloka">
+                                </a>
+                                <a href="#">
+                                    <img src="img/tiket.png" alt="tiket">
+                                </a>
+                                <a href="#">
+                                    <img src="img/airbnb.png" alt="airbnb">
+                                </a>
+                                <a href="#">
+                                    <img src="img/tripadvisor.png" alt="tripadvisor">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="intro__content content">
+                              <div class="content__block content__block-1">
+                                <div class="content__block-pictures">
+                                    <img src="img/content-img/girl-c-2.png" alt="Girl">
+                                    <img src="img/content-img/man-c.png" alt="Man">
+                                    <img src="img/content-img/girl-c.png" alt="Girl">
+                                </div>
+                                <div class="content__info">
+                                    <p class="content__info-title">1K+ People</p>
+                                    <p class="content__info-subtitle">Successfully Getting Home</p>
+                                </div>
+                              </div>
+                              <div class="content__block content__block-2">
+                                <img src="img/house.png" alt="House">
+                                <div class="content__info">
+                                    <p class="content__info-title">56 Houses</p>
+                                    <p class="content__info-subtitle">Sold Monthly</p>
+                                </div>
+                              </div>
+                              <div class="content__block content__block-3">
+                                <img src="img/girl.png" alt="Girl">
+                                <div class="content__info">
+                                    <p class="content__info-title">4K+</p>
+                                    <p class="content__info-subtitle">People Looking for New Homes</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="featured">
+                <div class="featured__block">
+                    <p class="over__title">Our Recommendation</p>
+                    <div class="featured__panel">
+                        <h2 class="title">Featured House</h2>
+                        <div class="featured__tabs-panel">
+                            <button class="featured__btn" type="button" data-tab="#tab_1, #tab_2, #tab_3, #tab_4, #tab_5">House</button>
+                            <button class="featured__btn" type="button" data-tab="#tab_2, #tab_6, #tab_7, #tab_8">Vila</button>
+                            <button class="featured__btn" type="button" data-tab="#tab_9, #tab_10, #tab_11, #tab_12">Apartament</button>
+                        </div>
+                        <div class="featured__btns-arrow">
+                            <button class="featured__btn-arr featured-pre">
+                                <i class='bx bx-chevron-left'></i>
+                            </button>
+                            <button class="featured__btn-arr featured-next">
+                                <i class='bx bx-chevron-right'></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured__cards">
+                    <div class="featured__card" id="tab_1">
+                        <div class="featured__image">
+                            <img src="img/cards/1-card.jpg" alt="Card">
+                            <button class="featured__card-btn featured__collor-btn-fire">Popular</button>
+                        </div>
+                        <div class="featured__info">
+                            <h3 class="featured__brand">Roselands House</h3>
+                            <p class="featured__price">$ 35.000.000</p>
+                            <div class="featured__block-info">
+                                <div class="featured__avatar">
+                                    <img src="img/faces/face-1.png" alt="Avatar">
+                                </div>
+                                <div class="featured__info-persone">
+                                    <p class="featured__info-name">Dianne Russell</p>
+                                    <p class="featured__info-from">Manchester, Kentucky</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured__card" id="tab_2">
+                        <div class="featured__image">
+                            <img src="img/cards/2-card.jpg" alt="Card">
+                            <button class="featured__card-btn featured__collor-btn-home">New House</button>
+                        </div>
+                        <div class="featured__info">
+                            <h3 class="featured__brand">Woodlandside</h3>
+                            <p class="featured__price">$ 20.000.000</p>
+                            <div class="featured__block-info">
+                                <div class="featured__avatar">
+                                    <img src="img/faces/face-2.png" alt="Avatar">
+                                </div>
+                                <div class="featured__info-persone">
+                                    <p class="featured__info-name">Robert Fox</p>
+                                    <p class="featured__info-from">Dr. San Jose, South Dakota</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured__card" id="tab_3">
+                        <div class="featured__image">
+                            <img src="img/cards/3-card.jpg" alt="Card">
+                            <button class="featured__card-btn featured__collor-btn-wallet">Best Deals</button>
+                        </div>
+                        <div class="featured__info">
+                            <h3 class="featured__brand">The Old Lighthouse</h3>
+                            <p class="featured__price">$ 44.000.000</p>
+                            <div class="featured__block-info">
+                                <div class="featured__avatar">
+                                    <img src="img/faces/face-3.png" alt="Avatar">
+                                </div>
+                                <div class="featured__info-persone">
+                                    <p class="featured__info-name">Ronald Richards</p>
+                                    <p class="featured__info-from">Santa Ana, Illinois </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured__card" id="tab_4">
+                        <div class="featured__image">
+                            <img src="img/cards/4-card.jpg" alt="Card">
+                            <button class="featured__card-btn featured__collor-btn-fire">Popular</button>
+                        </div>
+                        <div class="featured__info">
+                            <h3 class="featured__brand">Cosmo's House</h3>
+                            <p class="featured__price">$ 22.000.000</p>
+                            <div class="featured__block-info">
+                                <div class="featured__avatar">
+                                    <img src="img/faces/face-4.png" alt="Avatar">
+                                </div>
+                                <div class="featured__info-persone">
+                                    <p class="featured__info-name">Jenny Wilson</p>
+                                    <p class="featured__info-from">Preston Rd. Inglewood, Maine 98380</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured__card" id="tab_5">
+                        <div class="featured__image">
+                            <img src="img/cards/1-card.jpg" alt="Card">
+                            <button class="featured__card-btn featured__collor-btn-fire">Popular</button>
+                        </div>
+                        <div class="featured__info">
+                            <h3 class="featured__brand">Roselands House</h3>
+                            <p class="featured__price">$ 35.000.000</p>
+                            <div class="featured__block-info">
+                                <div class="featured__avatar">
+                                    <img src="img/faces/face-1.png" alt="Avatar">
+                                </div>
+                                <div class="featured__info-persone">
+                                    <p class="featured__info-name">Dianne Russell</p>
+                                    <p class="featured__info-from">Manchester, Kentucky</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured__card" id="tab_6">
+                        <div class="featured__image">
+                            <img src="img/cards/2-card.jpg" alt="Card">
+                            <button class="featured__card-btn featured__collor-btn-home">New House</button>
+                        </div>
+                        <div class="featured__info">
+                            <h3 class="featured__brand">Woodlandside</h3>
+                            <p class="featured__price">$ 20.000.000</p>
+                            <div class="featured__block-info">
+                                <div class="featured__avatar">
+                                    <img src="img/faces/face-2.png" alt="Avatar">
+                                </div>
+                                <div class="featured__info-persone">
+                                    <p class="featured__info-name">Robert Fox</p>
+                                    <p class="featured__info-from">Dr. San Jose, South Dakota</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured__card" id="tab_7">
+                        <div class="featured__image">
+                            <img src="img/cards/2-card.jpg" alt="Card">
+                            <button class="featured__card-btn featured__collor-btn-home">New House</button>
+                        </div>
+                        <div class="featured__info">
+                            <h3 class="featured__brand">Woodlandside</h3>
+                            <p class="featured__price">$ 20.000.000</p>
+                            <div class="featured__block-info">
+                                <div class="featured__avatar">
+                                    <img src="img/faces/face-2.png" alt="Avatar">
+                                </div>
+                                <div class="featured__info-persone">
+                                    <p class="featured__info-name">Robert Fox</p>
+                                    <p class="featured__info-from">Dr. San Jose, South Dakota</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured__card" id="tab_8">
+                        <div class="featured__image">
+                            <img src="img/cards/2-card.jpg" alt="Card">
+                            <button class="featured__card-btn featured__collor-btn-home">New House</button>
+                        </div>
+                        <div class="featured__info">
+                            <h3 class="featured__brand">Woodlandside</h3>
+                            <p class="featured__price">$ 20.000.000</p>
+                            <div class="featured__block-info">
+                                <div class="featured__avatar">
+                                    <img src="img/faces/face-2.png" alt="Avatar">
+                                </div>
+                                <div class="featured__info-persone">
+                                    <p class="featured__info-name">Robert Fox</p>
+                                    <p class="featured__info-from">Dr. San Jose, South Dakota</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured__card" id="tab_9">
+                        <div class="featured__image">
+                            <img src="img/cards/2-card.jpg" alt="Card">
+                            <button class="featured__card-btn featured__collor-btn-home">New House</button>
+                        </div>
+                        <div class="featured__info">
+                            <h3 class="featured__brand">Woodlandside</h3>
+                            <p class="featured__price">$ 20.000.000</p>
+                            <div class="featured__block-info">
+                                <div class="featured__avatar">
+                                    <img src="img/faces/face-2.png" alt="Avatar">
+                                </div>
+                                <div class="featured__info-persone">
+                                    <p class="featured__info-name">Robert Fox</p>
+                                    <p class="featured__info-from">Dr. San Jose, South Dakota</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured__card" id="tab_10">
+                        <div class="featured__image">
+                            <img src="img/cards/4-card.jpg" alt="Card">
+                            <button class="featured__card-btn featured__collor-btn-fire">Popular</button>
+                        </div>
+                        <div class="featured__info">
+                            <h3 class="featured__brand">Cosmo's House</h3>
+                            <p class="featured__price">$ 22.000.000</p>
+                            <div class="featured__block-info">
+                                <div class="featured__avatar">
+                                    <img src="img/faces/face-4.png" alt="Avatar">
+                                </div>
+                                <div class="featured__info-persone">
+                                    <p class="featured__info-name">Jenny Wilson</p>
+                                    <p class="featured__info-from">Preston Rd. Inglewood, Maine 98380</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured__card" id="tab_11">
+                        <div class="featured__image">
+                            <img src="img/cards/4-card.jpg" alt="Card">
+                            <button class="featured__card-btn featured__collor-btn-fire">Popular</button>
+                        </div>
+                        <div class="featured__info">
+                            <h3 class="featured__brand">Cosmo's House</h3>
+                            <p class="featured__price">$ 22.000.000</p>
+                            <div class="featured__block-info">
+                                <div class="featured__avatar">
+                                    <img src="img/faces/face-4.png" alt="Avatar">
+                                </div>
+                                <div class="featured__info-persone">
+                                    <p class="featured__info-name">Jenny Wilson</p>
+                                    <p class="featured__info-from">Preston Rd. Inglewood, Maine 98380</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured__card" id="tab_12">
+                        <div class="featured__image">
+                            <img src="img/cards/4-card.jpg" alt="Card">
+                            <button class="featured__card-btn featured__collor-btn-fire">Popular</button>
+                        </div>
+                        <div class="featured__info">
+                            <h3 class="featured__brand">Cosmo's House</h3>
+                            <p class="featured__price">$ 22.000.000</p>
+                            <div class="featured__block-info">
+                                <div class="featured__avatar">
+                                    <img src="img/faces/face-4.png" alt="Avatar">
+                                </div>
+                                <div class="featured__info-persone">
+                                    <p class="featured__info-name">Jenny Wilson</p>
+                                    <p class="featured__info-from">Preston Rd. Inglewood, Maine 98380</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured__card" id="tab_13">
+                        <div class="featured__image">
+                            <img src="img/cards/4-card.jpg" alt="Card">
+                            <button class="featured__card-btn featured__collor-btn-fire">Popular</button>
+                        </div>
+                        <div class="featured__info">
+                            <h3 class="featured__brand">Cosmo's House</h3>
+                            <p class="featured__price">$ 22.000.000</p>
+                            <div class="featured__block-info">
+                                <div class="featured__avatar">
+                                    <img src="img/faces/face-4.png" alt="Avatar">
+                                </div>
+                                <div class="featured__info-persone">
+                                    <p class="featured__info-name">Jenny Wilson</p>
+                                    <p class="featured__info-from">Preston Rd. Inglewood, Maine 98380</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="lets-tour">
+                <div class="lets-tour__left-block">
+                    <p class="over__title">Ready To Sell!</p>
+                    <h2 class="title">Let’s Tour And See Our House!</h2>
+                    <p class="section__subtitle">Houses recommended by our partners that have <br> been curated to become the home of your dreams!</p>
+                    <div class="lets-tour__detail">House Detail</div>
+                    <div class="lets-tour__lists">
+                        <div class="lets-tour__list-left">
+                            <p class="lets-tour__list-left-1">4 Bedrooms</p>
+                            <p class="lets-tour__list-left-2">1 Carport</p>
+                        </div>
+                        <div class="lets-tour__list-right">
+                            <p class="lets-tour__list-left-3">2 Bathrooms</p>
+                            <p class="lets-tour__list-left-4">2 Floors</p>
+                        </div>
+                    </div>
+                    <span class="line"></span>
+                    <div class="lets-tour__contact">
+                        <div class="lets-tour__block-info">
+                            <div class="lets-tour__info-left">
+                                <div class="featured__avatar">
+                                    <img src="img/faces/face-1.png" alt="Avatar">
+                                </div>
+                                <div class="featured__info-persone">
+                                    <p class="featured__info-name">Dianne Russell</p>
+                                    <p class="featured__info-from">Manager Director</p>
+                                </div>
+                            </div>
+                            <div class="lets-tour__info-right">
+                                <button class="button-green">
+                                    <img src="img/lets-tour/Telephone.png" alt="Telephone">
+                                    Contact Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lets-tour__right-block">
+                    <div class="lets-tour__iframe">
+                        <iframe src="https://www.youtube.com/embed/LXb3EKWsInQ?si=qsZtukXc1grdmBSp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="gallery-image"></iframe>
+                    </div>
+                    <div class="lets-tour__pictures">
+                        <img src="img/lets-tour/interior-1.jpg" alt="Interior" class="gallery-image">
+                        <img src="img/lets-tour/interior-2.jpg" alt="Interior" class="gallery-image">
+                        <img src="img/lets-tour/interior-3.jpg" alt="Interior" class="gallery-image">
+                    </div>
+                </div>
+                <div class="modal" id="myModal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalImage" alt="Modal" src="#">
+                    <div id="caption"></div>
+                </div>
+            </section>
+            <section class="say">
+                <div class="center">
+                    <p class="modefied-over__title">See Our Review</p>
+                    <h2 class="title">What Our User Say About Us </h2>
+                </div>
+                <div class="say__lists">
+                    <div class="say__list">
+                        <div class="say__img">
+                            <img src="img/say/house-1.jpg" alt="House">
+                            <div class="say__blog-info">
+                                <h3>My House Sold Out Fast!</h3>
+                                <p class="section__subtitle">I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!</p>
+                                <div class="lets-tour__info-left say__left-block">
+                                    <div class="featured__avatar say__face">
+                                        <img src="img/faces/face-2.png" alt="Avatar">
+                                    </div>
+                                    <div class="featured__info-persone">
+                                        <p class="featured__info-name">Courtney Henry</p>
+                                        <p class="featured__info-from">CEO Andarafish </p>
+                                    </div>
+                                    <div class="say__rating">
+                                        <img src="img/say/bx_bxs-star.png" alt="Star">
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="say__list">
+                        <div class="say__img">
+                            <img src="img/say/house-2.jpg" alt="House">
+                            <div class="say__blog-info">
+                                <h3>Best! I got the house I wanted through Hounter</h3>
+                                <p class="section__subtitle">Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
+                                <div class="lets-tour__info-left say__left-block">
+                                    <div class="featured__avatar say__face">
+                                        <img src="img/faces/face-1.png" alt="Avatar">
+                                    </div>
+                                    <div class="featured__info-persone">
+                                        <p class="featured__info-name">Dianne Russell</p>
+                                        <p class="featured__info-from">Manager Director</p>
+                                    </div>
+                                    <div class="say__rating">
+                                        <img src="img/say/bx_bxs-star.png" alt="Star">
+                                        <p>4.6</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="say__list">
+                        <div class="say__img">
+                            <img src="img/say/house-3.jpg" alt="House">
+                            <div class="say__blog-info">
+                                <h3>Through the Hounter, I can get a house for my self</h3>
+                                <p class="section__subtitle">By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!</p>
+                                <div class="lets-tour__info-left say__left-block">
+                                    <div class="featured__avatar say__face">
+                                        <img src="img/faces/face-4.png" alt="Avatar">
+                                    </div>
+                                    <div class="featured__info-persone">
+                                        <p class="featured__info-name">Esther Howard</p>
+                                        <p class="featured__info-from">Head of Marketing</p>
+                                    </div>
+                                    <div class="say__rating">
+                                        <img src="img/say/bx_bxs-star.png" alt="Star">
+                                        <p>4.6</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </section>
+            <section class="find">
+                <div class="find__container">
+                    <div class="center">
+                        <p class="modefied-over__title">See Tips And Trick From Our Partnership</p>
+                        <h2 class="title">Find Out More About <br> Selling And Buying Homes</h2>
+                        <button class="button-green find__button">More Article</button>
+                    </div>
+                    <div class="find__blocks">
+                        <div class="find__bloc-md">
+                            <div class="find__left-block">
+                                <div class="find__img-block">
+                                    <img src="img/find/house-1.jpg" alt="House">
+                                </div>
+                                <div class="find__info-block">
+                                    <p class="find__info-name find__name-1">Dianne Russell</p>
+                                    <p class="find__info-about">The things we need to check when we want to buy a house</p>
+                                    <p class="find__info-date">4 min read | 25 Apr 2021</p>
+                                </div>
+                            </div>
+                            <div class="find__left-block">
+                                <div class="find__img-block">
+                                    <img src="img/find/house-2.jpg" alt="House">
+                                </div>
+                                <div class="find__info-block">
+                                    <p class="find__info-name find__name-2">Courtney Henry</p>
+                                    <p class="find__info-about">7 Ways to distinguish the quality of the house we want to buy</p>
+                                    <p class="find__info-date">6 min read | 24 Apr 2021</p>
+                                </div>
+                            </div>
+                            <div class="find__left-block">
+                                <div class="find__img-block">
+                                    <img src="img/find/house-3.jpg" alt="House">
+                                </div>
+                                <div class="find__info-block">
+                                    <p class="find__info-name find__name-3">Darlene Robertson</p>
+                                    <p class="find__info-about">The best way to know the quality of the house we want to buy</p>
+                                    <p class="find__info-date">2 min read | 24 Apr 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="find__right-block">
+                            <img src="img/find/house-4.jpg" alt="House">
+                            <div class="find__info-block">
+                                <p class="find__info-name find__name-4">Cameron Williamson</p>
+                                <p class="find__info-about find__big">12 Things to know before buying a house</p>
+                                <p class="find__info-about-sub">Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house</p>
+                                <p class="find__info-date">8 min read | 25 Apr 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="subscribe">
+                <div class="subscribe__container subscribe__modefied">
+                    <div class="center subscribe__center">
+                        <img src="img/subscribe/chair.png" alt="Chair">
+                        <img src="img/subscribe/girl-sub.png" alt="Avatar">
+                        <img src="img/subscribe/man-sub.png" alt="Avatar">
+                        <img src="img/subscribe/house-sub.png" alt="House">
+                        <img src="img/subscribe/house-sub-2.png" alt="House">
+                        <img src="img/subscribe/man-sub-3.png" alt="Avatar">
+                        <img src="img/subscribe/girl-sub-2.png" alt="Avatar">
+                        <img src="img/subscribe/chair-2.png" alt="Chair">
+                        <h2 class="title">Subscribe For More Info and update from Hounter</h2>
+                        <div class="intro__search-form">
+                            <input type="search" class="search-input subscribe__background-input" name="search" placeholder="Your email here">
+                            <button type="submit" class="button-green">Subsribe Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__row">
+                    <div class="footer__column-left">
+                        <div class="header__logo footer__mr">
+                            <a href="" >
+                                <img src="img/head-logo.png" alt="header-logo">
+                            </a>
+                            <a href="" class="header__logo-title">Hounter</a>
+                        </div>
+                        <p class="footer__subtitle">We provide information about properties such as houses, villas and apartments to help people find their dream home</p>
+                        <div class="footer__logo">
+                            <img src="img/footer/FB.png" alt="Logo">
+                            <img src="img/footer/TW.png" alt="Logo">
+                            <img src="img/footer/INST.png" alt="Logo">
+                        </div>
+                    </div>
+                   <div class="footer__column-right">
+                    <div class="footer__column">
+                        <p class="footer__title">Property</p>
+                        <ul>
+                            <li class="footer__subtitle">
+                                <a href="#">House</a>
+                            </li>
+                            <li class="footer__subtitle">
+                                <a href="#">Apartment</a>
+                            </li>
+                            <li class="footer__subtitle">
+                                 <a href="#">Villa</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__title">Article</p>
+                        <ul>
+                            <li class="footer__subtitle">
+                                <a href="#">New Article</a>
+                            </li>
+                            <li class="footer__subtitle">
+                                <a href="#">Popular Article</a>
+                            </li>
+                            <li class="footer__subtitle">
+                                 <a href="#">Most Read</a>
+                            </li>
+                            <li class="footer__subtitle">
+                                <a href="#">Tips & Tricks</a>
+                           </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__title">Contact</p>
+                        <ul>
+                            <li class="footer__subtitle">
+                                <a href="#">2464 Royal Ln. Mesa, New Jersey 45463</a>
+                            </li>
+                            <li class="footer__subtitle">
+                                <a href="#">(671) 555-0110</a>
+                            </li>
+                            <li class="footer__subtitle">
+                                 <a href="#">info@hounter.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/bundle.js"></script>
+</body>
+</html>
